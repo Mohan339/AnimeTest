@@ -28,7 +28,7 @@ function AnimeContainer() {
 
   useEffect(() => {
     axios.get("https://api.jikan.moe/v4/anime").then(res => {
-      console.log(res.data.data)
+  
       setPictureList(res.data.data)
     })
   }, [])
